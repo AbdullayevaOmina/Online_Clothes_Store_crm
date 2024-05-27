@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "paths": {
+      "@pages": ["./src/pages"],
+      "@router": ["./src/router"],
+      "@auth-interface": ["./src/interfaces/auth.ts"],
+      "@products-interface": ["./src/interfaces/products.ts"],
+      "@categories-interface": ["./src/interfaces/categories.ts"],
+      "@workers-interface": ["./src/interfaces/workers.ts"],
+      "@users-interface": ["./src/interfaces/users.ts"],
+      "@global-interface": ["./src/interfaces/global.ts"],
+      "@service": ["./src/service"],
+      "@ui": ["./src/components/ui"],
+      "@store": ["./src/store/index"],
+      "@validation": ["./src/utils/validations.ts"],
+      "@token-service": ["./src/utils/token-service.ts"],
+      "@modals": ["./src/components/modals"],
+      "@global_table": ["./src/components"],
+      "@notification": ["./src/plugins/notification.ts"],
+      "@data-service": ["./src/utils/data-service.ts"]
+    },
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
